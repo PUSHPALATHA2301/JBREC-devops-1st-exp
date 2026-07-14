@@ -1,1 +1,23 @@
-
+&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+&lt;head&gt;
+&lt;meta charset=&quot;UTF-8&quot; /&gt;
+&lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1&quot; /&gt;
+&lt;title&gt;Event Registration&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;h1&gt;Event Registration Form&lt;/h1&gt;
+{% if success %}
+&lt;p style=&quot;color: green;&quot;&gt;{{ success }}&lt;/p&gt;
+{% endif %}
+&lt;form method=&quot;POST&quot; action=&quot;/&quot;&gt;
+&lt;label for=&quot;name&quot;&gt;Name:&lt;/label&gt;&lt;br /&gt;
+&lt;input type=&quot;text&quot; id=&quot;name&quot; name=&quot;name&quot; required /&gt;&lt;br /&gt;&lt;br /&gt;
+&lt;label for=&quot;email&quot;&gt;Email:&lt;/label&gt;&lt;br /&gt;
+&lt;input type=&quot;email&quot; id=&quot;email&quot; name=&quot;email&quot; required /&gt;&lt;br /&gt;&lt;br /&gt;
+&lt;label for=&quot;phone&quot;&gt;Phone:&lt;/label&gt;&lt;br /&gt;
+&lt;input type=&quot;tel&quot; id=&quot;phone&quot; name=&quot;phone&quot; /&gt;&lt;br /&gt;&lt;br /&gt;
+&lt;button type=&quot;submit&quot;&gt;Register&lt;/button&gt;
+&lt;/form&gt;
+&lt;/body&gt;
+&lt;/html&gt;
